@@ -53,6 +53,7 @@ function getClassForPosition($position) {
     <div class="l-wrapper" id="wrapper">
       <div class="c-headline">
         <h4 class="c-headline__title"><small class="u-text--danger">ZabriCraftCity</small><br/>Realtime leaderboard</h4>
+        <span class="c-chip c-chip--success">IP: zabricraftcity.nathanfallet.me</span>
       </div>
       <table class="c-table">
         <thead class="c-table__head">
