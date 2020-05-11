@@ -1,8 +1,9 @@
 <?php
 // Main config file
-if (!file_exists(dirname(__FILE__).'/env.php')) {
+if (!file_exists(dirname(__FILE__).'/.env.php')) {
   die('Environment file not found!');
 }
+require_once dirname(__FILE__).'/.env.php';
 
 // Headers
 header("Access-Control-Allow-Origin: *");
