@@ -1,4 +1,5 @@
 console.clear();
+console.log('Loading JS file...');
 
 // Containers
 const wrapper = document.getElementById('wrapper');
@@ -15,6 +16,7 @@ const append = (parent, el) => {
 
 // Render Empty State
 const emptyState = () => {
+  console.log('Empty state loading...');
   const newText = createNode('div');
   newText.classList = 'c-empty-state';
   newText.innerHTML = `
@@ -34,10 +36,12 @@ const emptyState = () => {
   setTimeout(() => {
     newText.remove();
   }, 500);
+  console.log('Loaded empty state!');
 };
 
 // Render leaderboard
 const renderList = () => {
+  console.log('Fetching list...');
   const url = `https://zabricraftcity.nathanfallet.me/api.php`;
   emptyState();
   fetch(url).
@@ -45,6 +49,7 @@ const renderList = () => {
     return response.json();
   }).
   then(data => {
+    console.log('Got response from API!');
     const tableClass = 'c-table';
     let table = createNode('table');
     table.classList = tableClass;
@@ -83,6 +88,7 @@ const renderList = () => {
         tr.querySelector('.c-place').classList.add('c-place--third');
       }
       append(tableBody, tr);
+      console.log('Data rendered!');
     });
 
   }).
@@ -98,3 +104,5 @@ document.getElementById('test').addEventListener('click', () => {
 });
 
 renderList();
+
+console.log('Finished loading JS file!');
