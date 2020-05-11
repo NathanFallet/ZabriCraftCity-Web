@@ -17,7 +17,7 @@ try {
 }
 
 // Get players from database
-$sql = $db->query("SELECT * FROM players WHERE emeralds > 0 AND op = 0 ORDER BY emeralds DESC LIMIT 10");
+$sql = $db->query("SELECT * FROM players WHERE emeralds > 0 AND op = 0 ORDER BY emeralds DESC");
 $players = array();
 $position = 1;
 while ($dn = $sql->fetch()) {
