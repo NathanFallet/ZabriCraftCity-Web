@@ -66,14 +66,14 @@ const renderList = () => {
     title.innerHTML = `<h4 class="c-headline__title"><small class="u-text--danger">ZabriCraftCity</small><br/>Realtime leaderboard</h4>`;
     append(wrapper, title);
     append(wrapper, table);
-    data.MRData.StandingsTable.StandingsLists[0].DriverStandings.forEach(item => {
+    data.forEach(item => {
       const tableBody = table.querySelector('tbody');
       let tr = createNode('tr');
       tr.classList = "c-table__row";
       tr.innerHTML = `
-						<td class="c-table__cell c-table__cell--place u-text--center"><span class="c-place">${item.position}</span></td>
-					<td class="c-table__cell c-table__cell--count"><small>${item.pseudo}</small></td>
-					<td class="c-table__cell c-table__cell--points u-text--right"><strong>${item.emeralds}</strong></td>
+					<td class="c-table__cell c-table__cell--place u-text--center"><span class="c-place">${item.position}</span></td>
+					<td class="c-table__cell c-table__cell--name">${item.pseudo}</td>
+					<td class="c-table__cell c-table__cell--points u-text--right">${item.emeralds}</td>
 				`;
 
       if (item.position == 1) {
