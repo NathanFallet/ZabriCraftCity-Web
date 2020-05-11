@@ -48,6 +48,7 @@ function getClassForPosition($position) {
     <meta charset="utf-8">
     <title>ZabriCraftCity</title>
     <link rel="stylesheet" href="/css/style.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="l-wrapper" id="wrapper">
