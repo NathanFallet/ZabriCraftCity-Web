@@ -2,7 +2,6 @@ console.clear();
 
 // Containers
 const wrapper = document.getElementById('wrapper');
-const header = document.getElementById('header');
 
 // Create Element
 const createNode = element => {

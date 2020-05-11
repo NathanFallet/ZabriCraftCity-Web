@@ -7,6 +7,7 @@
   </head>
   <body>
     <div class="l-wrapper" id="wrapper"></div>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="/js/script.js" charset="utf-8"></script>
   </body>
 </html>
