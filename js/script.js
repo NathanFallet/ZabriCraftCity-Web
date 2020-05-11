@@ -38,7 +38,7 @@ const emptyState = () => {
 };
 
 // Render leaderboard
-const renderList = () {
+const renderList = () => {
   const url = `https://zabricraftcity.nathanfallet.me/api.php`;
   emptyState();
   fetch(url).
